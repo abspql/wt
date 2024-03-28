@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Event - Focus</title>
+</head>
+<body>
+    <p>Enter Something here:</p>
+    <input type="text" id="input1" onfocus="focusevent()" onblur="blurevent()"/>
+</body>
+    <script>
+        function focusevent(){
+            document.getElementById("input1").style.backgroundColor = "aqua";
+        }
+        function blurevent(){
+            document.getElementById("input1").style.backgroundColor = "white";
+        }
+    </script>
+</html>
